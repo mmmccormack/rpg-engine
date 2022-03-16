@@ -1,0 +1,23 @@
+{ "StartScene" : {
+    "pill-1" : {
+        "collected" : false
+        },
+    "pill-2" : {
+        "collected" : false
+        },
+    "healthPack-3" : {
+        "collected" : false
+        },
+    "healthPack-4" : {
+        "collected" : false
+        }
+    }, 
+"LevelOne" : {
+    "pill-1" : {
+        "collected" : false
+        },
+    "healthPack-2" : {
+        "collected" : false
+        }
+    }
+}

@@ -1,0 +1,114 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "firstlevel.tmx",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "": {
+            "scaleInEditor": 1
+        },
+        "/Users/admin101/Desktop/RPG/assets/map/map.tmx": {
+            "scale": 0.7402083333333334,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 631.578947368421,
+                "y": 516.0709259780467
+            }
+        },
+        "/Users/admin101/Desktop/RPG/assets/map/map.tmx#spritesheet": {
+            "scaleInDock": 1
+        },
+        "/Users/admin101/Desktop/RPG/assets/map/nextmap.tmx": {
+            "scale": 3.8890624999999996,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 72.2539172358377,
+                "y": 80.22498995580557
+            }
+        },
+        "/Users/admin101/Desktop/RPG/assets/map/nextmap.tmx#tiles": {
+            "scaleInDock": 1
+        },
+        "/Users/admin101/Desktop/RPG/assets/map/testmap.tmx": {
+            "scale": 1.8233870967741936,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 238.01857585139317,
+                "y": 121.20300751879697
+            }
+        },
+        "/Users/admin101/Desktop/RPG/assets/map/testmap.tmx#test": {
+            "scaleInDock": 1
+        },
+        "firstlevel.tmx": {
+            "scale": 2,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 198.25,
+                "y": 156.5
+            }
+        },
+        "firstlevel.tmx#npcs": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "firstlevel.tmx#pickups": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "firstlevel.tmx#purple": {
+            "scaleInDock": 2,
+            "scaleInEditor": 2
+        },
+        "firstlevel.tmx#purpleTransparent": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 2
+        },
+        "house.tmx": {
+            "scale": 2.898897058823529,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 136.43119847812304,
+                "y": 6.554216867469876
+            }
+        },
+        "house.tmx#house": {
+            "scaleInDock": 2,
+            "scaleInEditor": 2
+        },
+        "house.tmx#pickups": {
+            "scaleInDock": 2,
+            "scaleInEditor": 1
+        }
+    },
+    "last.exportedFilePath": "/Users/admin101/Desktop/GAME/overWorld",
+    "last.imagePath": "/Users/admin101/Desktop/GAME/assets/sprites",
+    "map.height": 10,
+    "map.lastUsedExportFilter": "JSON map files (*.json)",
+    "map.lastUsedFormat": "tmx",
+    "map.layerDataFormat": null,
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 16,
+    "openFiles": [
+        "firstlevel.tmx",
+        "house.tmx"
+    ],
+    "project": "newTileMap.tiled-project",
+    "property.type": "string",
+    "recentFiles": [
+        "house.tmx",
+        "firstlevel.tmx",
+        "/Users/admin101/Desktop/RPG/assets/map/testmap.tmx",
+        "/Users/admin101/Desktop/RPG/assets/map/nextmap.tmx",
+        "/Users/admin101/Desktop/RPG/assets/map/map.tmx"
+    ],
+    "tileset.embedInMap": true,
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}

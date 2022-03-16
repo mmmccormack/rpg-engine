@@ -1,0 +1,17 @@
+{"heroes" : 
+    {"warrior": {
+        "position": {"x": 90, "y": 50},
+        "texture": "player",
+        "frame": 0,
+        "type": "Warrior",
+        "stats": {"level": 1, "offense": 10, "defense": 10, "maxHp": 30,"hp": 20, "maxBp": 2, "bp": 2, "xp": 0 }
+        },
+    "mage": {
+        "position": {"x": 90, "y": 50},
+        "texture": "player",
+        "frame": 0,
+        "type": "Mage",
+        "stats": {"level": 1, "offense": 12, "defense": 15, "maxHp": 25,"hp": 25, "maxBp": 2, "bp": 2, "xp": 0 }
+        }
+    }
+}

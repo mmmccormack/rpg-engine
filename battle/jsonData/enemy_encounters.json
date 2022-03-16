@@ -1,0 +1,38 @@
+{"enemy_encounters": [
+    {"encounter": [
+        {"dragon": {
+            "position": {"x": 90, "y": 50},
+            "texture": "dragon",
+            "frame": 0,
+            "type": "Dragon",
+            "stats": {"offense": 12, "defense": 15, "hp":25, "xp":100, "level":1 }
+            }
+        },
+        {"pumpkin": {
+            "position": {"x": 50, "y": 100},
+            "texture": "pumpkin",
+            "frame": 0,
+            "type": "Pumpkin",
+            "stats": {"offense": 8, "defense": 12, "hp":25, "xp":100, "level":1 }
+            }
+        }
+    ]},
+    {"encounter": [
+        {"pumpkin": {
+            "position": {"x": 90, "y": 50},
+            "texture": "pumpkin",
+            "frame": 0,
+            "type": "Pumpkin",
+            "stats": {"offense": 8, "defense": 12, "hp":25, "xp":100, "level":1 }
+            }
+        },
+        {"dragon": {
+            "position": {"x": 50, "y": 100},
+            "texture": "dragon",
+            "frame": 0,
+            "type": "Dragon",
+            "stats": {"offense": 12, "defense": 15, "hp":25, "xp":100, "level":1 }
+            }
+        }
+    ]}]
+}
