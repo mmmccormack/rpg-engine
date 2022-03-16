@@ -10,7 +10,8 @@ class Message extends Phaser.GameObjects.Container {
         graphics.fillRect(-90, -15, 180, 30);
         this.text = new Phaser.GameObjects.Text(scene, 0, 0, "", { color: "#ffffff", align: "center", fontSize: 12, wordWrap: { width: 160, useAdvancedWrap: true }});
         this.add(this.text);
-        this.text.setOrigin(0.5);        
+        this.text.setOrigin(0.5); 
+        events.off("Message")       
         events.on("Message", this.showMessage, this);
         this.visible = false;
     }
