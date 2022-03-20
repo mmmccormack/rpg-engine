@@ -9,7 +9,9 @@ class Information extends Phaser.GameObjects.Container {
           // start x, start y, width, height       
         graphics.strokeRect(-168, -15, 260, 30);
         graphics.fillRect(-168, -15, 260, 30);
-        this.text = new Phaser.GameObjects.Text(scene, 0, 0, "", { color: "#ffffff", align: "left", fontSize: 10, wordWrap: { width: 250, useAdvancedWrap: true }});
+        this.text = new Phaser.GameObjects.BitmapText(scene, 0, 0, "defaultFont")
+            .setFontSize(8)
+            .setMaxWidth(240)
         this.add(this.text);
         this.text.setOrigin(0.69, 0.5);
         events.off("Information")

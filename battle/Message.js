@@ -8,7 +8,10 @@ class Message extends Phaser.GameObjects.Container {
         graphics.fillStyle(0x000000, 0.4);        
         graphics.strokeRect(-90, -15, 180, 30);
         graphics.fillRect(-90, -15, 180, 30);
-        this.text = new Phaser.GameObjects.Text(scene, 0, 0, "", { color: "#ffffff", align: "center", fontSize: 12, wordWrap: { width: 160, useAdvancedWrap: true }});
+        // this.text = new Phaser.GameObjects.Text(scene, 0, 0, "", { color: "#ffffff", align: "center", fontSize: 12, wordWrap: { width: 160, useAdvancedWrap: true }});
+        this.text = new Phaser.GameObjects.BitmapText(scene, 0, 0, "defaultFont")
+        .setFontSize(8)
+        .setMaxWidth(180);
         this.add(this.text);
         this.text.setOrigin(0.5); 
         events.off("Message")       

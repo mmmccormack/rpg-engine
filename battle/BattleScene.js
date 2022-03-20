@@ -6,6 +6,7 @@ class BattleScene extends Phaser.Scene {
 
     preload() {
 
+        this.load.bitmapFont('defaultFont', './assets/defaultFont.png', './assets/defaultFont.xml');
         this.load.spritesheet('player', './assets/RPG_assets.png', {
             frameWidth: 16,
             frameHeight: 16
