@@ -20,9 +20,9 @@ class UIScene extends Phaser.Scene {
         // basic container to hold all menus
         this.menus = this.add.container();
                         
-        this.heroesMenu = new HeroesMenu(230, 173, this);                                      
-        this.actionsMenu = new ActionsMenu(130, 173, this);            
-        this.enemiesMenu = new EnemiesMenu(10, 173, this);  
+        this.heroesMenu = new HeroesMenu(230, 175, this);                                      
+        this.actionsMenu = new ActionsMenu(130, 175, this);            
+        this.enemiesMenu = new EnemiesMenu(10, 175, this);  
 
         // the currently selected menu 
         this.currentMenu = this.actionsMenu;

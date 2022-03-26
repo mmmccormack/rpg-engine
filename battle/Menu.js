@@ -11,35 +11,36 @@ class Menu extends Phaser.GameObjects.Container {
 
     addMenuItem(unit) {
 
-        const menuItem = new MenuItem(0, this.menuItems.length * 20, unit, this.scene);
+        const menuItem = new MenuItem(this.scene, 0, this.menuItems.length * 20, "defaultFont", unit)
+        .setFontSize(8).setTint(0xffffff);
         this.menuItems.push(menuItem);
         this.add(menuItem); 
         return menuItem; 
     }       
     moveSelectionUp() {
-        this.menuItems[this.menuItemIndex].deselect();
+        this.menuItems[this.menuItemIndex].setTint(0xffffff);
         do {
             this.menuItemIndex--;
             if(this.menuItemIndex < 0)
                 this.menuItemIndex = this.menuItems.length - 1;
         } while(!this.menuItems[this.menuItemIndex].active);
-        this.menuItems[this.menuItemIndex].select();
+        this.menuItems[this.menuItemIndex].setTint(0xff0000);
     }
     moveSelectionDown() {
-        this.menuItems[this.menuItemIndex].deselect();
+        this.menuItems[this.menuItemIndex].setTint(0xffffff);
         do {
             this.menuItemIndex++;
             if(this.menuItemIndex >= this.menuItems.length)
                 this.menuItemIndex = 0;
         } while(!this.menuItems[this.menuItemIndex].active);
-        this.menuItems[this.menuItemIndex].select();
+        this.menuItems[this.menuItemIndex].setTint(0xff0000);
     }
     // select the menu as a whole and an element with index from it
     select(index) {
         if(!index) {
             index = 0;
         }       
-        this.menuItems[this.menuItemIndex].deselect();
+        this.menuItems[this.menuItemIndex].setTint(0xffffff);
         this.menuItemIndex = index;
         while(!this.menuItems[this.menuItemIndex].active) {
             this.menuItemIndex++;
@@ -50,12 +51,12 @@ class Menu extends Phaser.GameObjects.Container {
                 return;
             }
         }
-        this.menuItems[this.menuItemIndex].select();
+        this.menuItems[this.menuItemIndex].setTint(0xff0000);
         this.selected = true;
     }
     // deselect this menu
     deselect() {        
-        this.menuItems[this.menuItemIndex].deselect();
+        this.menuItems[this.menuItemIndex].setTint(0xffffff);
         this.menuItemIndex = 0;
         this.selected = false;
     }

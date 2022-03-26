@@ -1,11 +1,7 @@
-class Text extends Phaser.GameObjects.Text {
-    constructor(scene, x, y, text, color) {
-        super(scene, x, y, text, {
-          fontSize: '12',
-          color: color,
-          stroke: '#000',
-          strokeThickness: 4,
-        });
+class Text extends Phaser.GameObjects.BitmapText {
+    constructor(scene, x, y, font, text) {
+        super(scene, x, y, font, text);
+
         this.setOrigin(0, 0);
         scene.add.existing(this);
       }

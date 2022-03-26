@@ -15,9 +15,10 @@ class Unit extends Phaser.GameObjects.Sprite {
         this.living = true;
         this.menuItem = null;
         if (this.type == "Warrior" || this.type == "Mage") {
-            this.hpValue = new Text(scene, (x-30), (y-35), `${this.hp}/${this.maxHp}`, "#ffffff");
-            this.bpValue = new Text(scene, (x+10), (y-35), `${this.bp}/${this.maxBp}`, "#ffff00");
-            // this.bpValue.style.color = "#ffff00";
+            this.hpValue = new Text(scene, (x-30), (y-35), "defaultFont", `${this.hp}/${this.maxHp}`)
+            .setFontSize(8).setTint(0xffffff);
+            this.bpValue = new Text(scene, (x+10), (y-25), "defaultFont", `${this.bp}/${this.maxBp}`)
+            .setFontSize(8).setTint(0xffff00);
         }
         this.scene.events.off()
 

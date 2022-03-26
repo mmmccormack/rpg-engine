@@ -15,7 +15,7 @@ class GameScene extends Phaser.Scene {
         this.load.bitmapFont('defaultFont', './assets/defaultFont.png', './assets/defaultFont.xml');
 
         // load main character spritesheet
-        this.load.spritesheet('characters', './assets/sprites/walkingwarrior.png', {
+        this.load.spritesheet('characters', './assets/sprites/newHero.png', {
             frameWidth: 16,
             frameHeight: 16
         });

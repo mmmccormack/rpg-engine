@@ -53,7 +53,7 @@ class BattleScene extends Phaser.Scene {
                     heroArray.push(finalHero);
                     this.add.existing(finalHero);
                 } else if (heroName == "Mage") {
-                    const finalHero = new PlayerCharacter(this, 265, 100, "player", 4, heroName, {level, offense, defense, maxHp, hp, maxBp, bp, nextLevel});
+                    const finalHero = new PlayerCharacter(this, 265, 120, "player", 4, heroName, {level, offense, defense, maxHp, hp, maxBp, bp, nextLevel});
                     heroArray.push(finalHero);
                     this.add.existing(finalHero);
                 }
@@ -80,7 +80,7 @@ class BattleScene extends Phaser.Scene {
                     let {level, offense, defense, maxHp, hp, maxBp, bp, xp, nextLevel} = this.heroData[index];
                     hp = hp + hpBonus >= this.heroData[index].maxHp ? this.heroData[index].maxHp : this.heroData[index].hp + hpBonus;
                     bp = bp + bpBonus >= this.heroData[index].maxBp ? this.heroData[index].maxBp : this.heroData[index].bp + bpBonus;
-                    const finalHero = new PlayerCharacter(this, 265, 110, "player", 4, heroName, {level, offense, defense, maxHp, hp, maxBp, bp, xp, nextLevel});
+                    const finalHero = new PlayerCharacter(this, 265, 120, "player", 4, heroName, {level, offense, defense, maxHp, hp, maxBp, bp, xp, nextLevel});
                     heroArray.push(finalHero);
                     this.add.existing(finalHero);
                 }
